@@ -1,12 +1,23 @@
 {
   "name": "sharezone",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Sharepoint library with support for multiple authentication strategies",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "test": "grunt test"
   },
-  "author": "Cian Clarke",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:forivall/sharezone.git"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "author": "Jordan Klassen <forivall@gmail.com>",
+  "contributors": [
+    "Cian Clarke"
+  ],
   "license": "MIT",
   "dependencies": {
     "agentkeepalive": ">=1.2.0",
