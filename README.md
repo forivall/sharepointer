@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/cianclarke/sharepointer.svg)](https://travis-ci.org/cianclarke/sharepointer)
+[![Build Status](https://travis-ci.org/forivall/sharezone.svg)](https://travis-ci.org/forivall/sharezone)
 
 A Node.js SharePoint Client.
 

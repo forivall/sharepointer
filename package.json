@@ -1,8 +1,8 @@
 {
-  "name": "sharepointer",
-  "version": "1.6.0",
+  "name": "sharezone",
+  "version": "0.1.0",
   "description": "Sharepoint library with support for multiple authentication strategies",
-  "main": "sharepoint.js",
+  "main": "index.js",
   "scripts": {
     "test": "grunt test"
   },
