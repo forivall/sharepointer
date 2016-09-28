@@ -2,7 +2,7 @@ var assert = require('assert'),
 _ = require('underscore');
 
 exports.it_should_login_and_retrieve_lists = function(done) {
-  var sharepoint = require('../../sharepoint.js')({
+  var sharepoint = require('../../index.js')({
     username: process.env.SP_USERNAME,
     password: process.env.SP_PASSWORD,
     type: process.env.SP_AUTH_TYPE,
@@ -11,7 +11,7 @@ exports.it_should_login_and_retrieve_lists = function(done) {
     federatedAuthUrl: process.env.SP_FEDERATED_AUTH_URL,
     strictSSL: false
   });
-  
+
   sharepoint.login(function(err) {
     assert.ifError(err, 'Error logging in' + JSON.stringify(err));
     sharepoint.lists.list(function(err, listRes) {

@@ -1,7 +1,7 @@
 var assert = require('assert');
 var idToDelete;
 
-var sharepoint = require('../../sharepoint.js')({
+var sharepoint = require('../../index.js')({
   username: process.env.SP_USERNAME,
   password: process.env.SP_PASSWORD,
   type: process.env.SP_AUTH_TYPE,
@@ -29,7 +29,7 @@ exports.it_should_create_and_delete_lists = function(done) {
         }
         assert.ifError(err, 'Error on updating list: ' + err);
         assert.ok(updateResult, 'No update result found: ' + updateResult);
-        
+
         sharepoint.lists.del(idToDelete, function(err) {
           assert.ifError(err, 'Error on deleting list: ' + err);
           // we've successfully cleaned up - no need to do it later
