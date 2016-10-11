@@ -1,0 +1,3 @@
+--async-only
+--ui exports
+--timeout 10000

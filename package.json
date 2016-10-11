@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "grunt test"
+    "test": "env-cmd ./test/.env mocha ./test/unit"
   },
   "repository": {
     "type": "git",
@@ -29,13 +29,7 @@
     "xml2js": "^0.4.16"
   },
   "devDependencies": {
-    "grunt-concurrent": "^2.3.0",
-    "grunt-node-inspector": "^0.4.1",
-    "grunt-open": "^0.2.3",
-    "grunt-shell": "^1.2.1",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "0.12.0",
-    "grunt-fh-build": "~1.0.1",
+    "env-cmd": "^2.2.0",
     "mocha": "^2.2.4",
     "nock": "^2.10.0"
   }
