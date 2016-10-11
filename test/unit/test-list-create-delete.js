@@ -1,4 +1,4 @@
-var _ = require('underscore'),
+var _ = require('lodash'),
 apis = require('../fixtures/apis').create(),
 intTest = require('../integration/test-list-create-delete');
 

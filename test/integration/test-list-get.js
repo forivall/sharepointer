@@ -1,5 +1,5 @@
 var assert = require('assert'),
-_ = require('underscore');
+_ = require('lodash');
 
 exports.it_should_login_and_retrieve_lists = function(done) {
   var sharepoint = require('../../index.js')({
